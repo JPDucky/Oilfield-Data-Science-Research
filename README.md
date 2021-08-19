@@ -45,6 +45,9 @@ RESULTS:
   My results showed that the LSTM neural networks is able to accurately predict the production with an extremely small error and to a much more accurate degree than with conventional methods. I am still unable to get my code to predict future forecasts, which involve feeding the model its own previous predictions and using those to further predict new variables out to a specified time following the pattern it learned during training. I am confident enough of the model’s accuracy to predict future variables to say that it would be useful in an economic prediction.
 
   With my exploratory data analysis, I found that the most well correlated variables were the cumulative injection and productions, so I decided to analyze the 4 that best correlated for use in the LSTM.
+  
+![image](https://user-images.githubusercontent.com/34105363/129991343-c0882f93-e224-43c9-81e4-95ab263e94cb.png)
+
 
 Correlation Plot of Variables
 
