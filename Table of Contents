@@ -1,0 +1,38 @@
+README:
+    1. Injprodedit.py – This is my data cleaning code
+        a. Put the file location into line 13
+        b. Choose the column names in line 16
+        c. Pick the index column in line 17
+        d. Line 19 drops Nan values
+        e. Line 25 saves the file to a .CSV
+    2. Eda project1.py – This is my exploratory data analysis code
+        a. Line 19 sets the data frame to import a chosen csv file
+        b. Lines 24-29 when uncommented plot the distributions of the chosen variables
+        c. Lines 46-49 when uncommented do a pair plot
+        d. Lines 64-67 create a correlation plot between chosen variables
+    3. VAR2.py – This is my vector autoregression file
+        a. Lines 40-44 import the data and set the dataframe
+        b. Lines 61-62 import the model
+        c. Lines 66-71 run the model and print the values
+    4. Lstm injprod.py – this is my univariate lstm
+        a. Lines 20-42 convert the data into a format readable by the algorithm
+        b. Lines 45-46 import the data
+        c. Lines 48-49 encode any categorical data into numerical values
+        d. Lines 53-54 normalize the data
+        e. Lines 61-71 shape the data for the machine and split it into test and training sets
+        f. Lines 75-85 run the lstm
+        g. Lines 88-98 print the forecast
+    5. Multivlstm without lag (red river b).py – this is my multivariate lstm
+        a. Lines 20-42 convert the data into a readable format for the algorithm
+        b. 60-62 imports the data
+        c. Line 66 stops the array at 374
+        d. Lines 83-84 scale the data and normalize it
+        e. 105-107 splits it into test and train sets
+        f. 133 inputs the amount of nodes that run in the machine
+        g. 140-152 define and fit the lstm
+        h. 188-215 un shape, un scale, and unnormalize the data then print it, something is causing an error
+    6. Multivlstm stock.py – this was the code that I got to print the production curve
+        a. Everything is the same as above, except after ‘print rmse’:
+        b. Lines 178-180 add the padding matrix to the plot
+        c. Line 185 concatenates the matrices to be plotted
+        d. 188-196 plots the data
